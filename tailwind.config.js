@@ -17,6 +17,10 @@ module.exports = {
           lightest: "#f3f4f6",
         },
         my_white: "#f7f9fa",
+        my_green: {
+          DEFAULT: "#5ce0bd",
+          dark: "#1a3f385e",
+        },
       },
     },
   },

@@ -1,9 +1,15 @@
 @tailwind base;
 
 @layer base {
+  body {
+    @apply bg-[#131a2f];
+    /* @apply bg-[#fff]; */
+    /* @apply bg-gradient-to-r from-[#0f131f] to-cyan-950; */
+  }
   html {
-    @apply text-my_black;
-    @apply bg-gradient-to-r from-lime-100 to-amber-100;
+    @apply text-my_white;
+    /* @apply bg-[#0f131f]; */
+    @apply leading-7;
   }
 }
 
