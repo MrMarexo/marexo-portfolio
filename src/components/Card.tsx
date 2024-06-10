@@ -4,7 +4,7 @@ import { Arrow } from "./icons/Icons";
 import Link from "next/link";
 
 const Badge: FCC = ({ children }) => (
-  <div className="bg-my_green-dark text-my_green rounded-[20px] px-4 py-[2px] text-[13px] shadow-md">
+  <div className="rounded-[20px] bg-my_green-dark px-4 py-[2px] text-[13px] text-my_green shadow-md">
     {children}
   </div>
 );
@@ -19,7 +19,7 @@ export const Card: FCC<{
 }> = ({ image, children, timePeriod, title, position, badges, link }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="group flex cursor-pointer items-start gap-5 rounded-lg p-4 transition-all duration-200 hover:bg-[#41505726] hover:shadow-lg">
+      <div className="group flex cursor-pointer flex-col items-start gap-5 rounded-lg bg-[#41505726] p-4 transition-all duration-200 hover:bg-[#41505726] hover:shadow-lg lg:flex-row lg:bg-transparent">
         {image ? (
           <Image
             src={image}
@@ -37,14 +37,14 @@ export const Card: FCC<{
         )}
         <div>
           <div className="mb-3 flex items-center gap-2">
-            <h3 className="group-hover:text-my_green text-lg transition-colors duration-200">
+            <h3 className="text-lg transition-colors duration-200 group-hover:text-my_green">
               {position ? `${position} •` : ""} {title}
             </h3>
             <div className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
               <Arrow />
             </div>
           </div>
-          <p className="mb-4 text-sm font-[300] leading-6 text-gray-400 transition-colors duration-200 group-hover:text-my_white">
+          <p className="mb-4 text-sm font-[300] leading-6 text-my_white transition-colors  duration-200 group-hover:text-my_white lg:text-gray-400">
             {children}
           </p>
           {badges && (
