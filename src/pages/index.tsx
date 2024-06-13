@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Marek Chovan</title>
         <meta name="description" content="Marek Chovan - portfolio page" />
+        <meta property="og:image" content="/img/opengraph-image.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FlashlightOverlay />
