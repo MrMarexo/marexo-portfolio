@@ -14,10 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FlashlightOverlay />
-      <div className="flex flex-col justify-center px-5 lg:flex-row lg:gap-20">
-        <div className="flex lg:w-[45%] lg:justify-end">
+      <div className="flex lg:fixed lg:ml-14 xl:ml-32 px-5">
           <div className="flex h-full flex-col justify-between pt-16 lg:pt-24">
-            <div className="max-w-[400px]">
+            <div className="lg:max-w-[400px]">
               <h1 className="text-7xl font-[600] drop-shadow-lg">
                 Marek Chovan
               </h1>
@@ -31,7 +30,6 @@ export default function Home() {
               <Link
                 href="/Marek_Chovan_CV.pdf"
                 target="_blank"
-                // className="hidden lg:inline"
               >
                 <div className="group flex flex-row items-center gap-2">
                   <div className="text-lg transition-colors duration-200 group-hover:text-my_green">
@@ -62,8 +60,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-screen pt-24 lg:w-[55%] lg:overflow-auto">
-          <p className="text-slate-300 lg:max-w-[700px] lg:px-4">
+      <div className="flex flex-col lg:w-[50%] px-5 lg:ml-auto pt-24 xl:pr-10">
+          <p className="text-slate-300 lg:max-w-[500px] xl:max-w-[800px] lg:px-4">
             I started my dev journey in 2020 when I worked as a Windows
             administrator for{" "}
             <Link
@@ -200,7 +198,7 @@ export default function Home() {
           <Link
             href="/Marek_Chovan_CV.pdf"
             target="_blank"
-            className="lg-hidden"
+            className="lg:hidden"
           >
             <div className="group flex flex-row items-center justify-center gap-2">
               <div className="text-lg transition-colors duration-200 group-hover:text-my_green">
@@ -229,7 +227,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
     </>
   );
 }

@@ -19,7 +19,7 @@ export const Card: FCC<{
 }> = ({ image, children, timePeriod, title, position, badges, link }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="group flex cursor-pointer flex-col items-start gap-5 rounded-lg bg-[#41505726] p-4 transition-all duration-200 hover:bg-[#41505726] hover:shadow-lg lg:flex-row lg:bg-transparent">
+      <div className="group flex cursor-pointer flex-col items-start gap-5 rounded-lg bg-[#41505726] p-4 transition-all duration-200 hover:bg-[#41505726] hover:shadow-lg xl:flex-row lg:bg-transparent">
         {image ? (
           <Image
             src={image}
