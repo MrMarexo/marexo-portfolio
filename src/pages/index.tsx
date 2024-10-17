@@ -130,8 +130,24 @@ export default function Home() {
           </p>
           <h2 className="mb-8 pl-4 pt-[100px] text-xl uppercase">Experience</h2>
           <div className="mb-10 flex max-w-[700px] flex-col gap-8">
+          <Card
+              timePeriod="2024 - Present"
+              title="Pelmet s.r.o."
+              position="Front-end developer"
+              link="https://www.pelmet.eu/"
+              badges={[
+                "Next 14",
+                "Typescript",
+                "Tailwind",
+                "DaisyUI",
+                "Playwright",
+                "Jest"
+              ]}
+            >
+              In Pelmet we&apos;re working on a new video streaming platform. It&apos;s the first time I&apos;ve been using Next 14 with all its new features in a commercial project. Since this app is expected to have huge traffic numbers, we&apos;re especially focusing on performance and testing. I&apos;m learning a lot about Playwright and Jest and how to use them effectively.
+            </Card>
             <Card
-              timePeriod="2020 - Present"
+              timePeriod="2020 - 2024"
               title="UlovDomov.cz"
               position="Front-end developer"
               link="https://www.ulovdomov.cz"
